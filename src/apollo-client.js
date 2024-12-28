@@ -1,6 +1,5 @@
 import { ApolloClient, InMemoryCache, createHttpLink, makeVar } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-import { gql } from '@apollo/client'; // Import gql
 
 // Reactive variable to manage `isLoggedIn` state
 export const isLoggedInVar = makeVar(!!localStorage.getItem('token')); // True if token exists, false otherwise

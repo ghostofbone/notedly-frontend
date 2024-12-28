@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { gql, useApolloClient, useMutation } from '@apollo/client';
+import React from 'react'; // Removed useState
+import { gql, useMutation } from '@apollo/client'; // Removed useApolloClient
 import { useNavigate } from 'react-router-dom';
 import { isLoggedInVar } from '../apollo-client'; // Import the reactive variable
-import Button from '../components/Button';
 import UserForm from "../components/UserForm";
 
 // Mutation for signing up a new user
@@ -13,15 +11,9 @@ const SIGNUP_USER = gql`
     }
 `;
 
-const Signup = (props) => {
-    const [formData, setFormData] = useState({
-        username: '',
-        email: '',
-        password: ''
-    });
-
+const Signup = () => {
     const navigate = useNavigate();
-    const client = useApolloClient();
+    // Removed client declaration because it was unused.
 
     // Mutation setup
     const [signUp, { loading, error }] = useMutation(SIGNUP_USER, {
@@ -34,18 +26,12 @@ const Signup = (props) => {
         }
     });
 
-
-
     return (
-
         <React.Fragment>
             <h1>Sign Up</h1>
             <UserForm action={signUp} formType='signup' errors={error} loading={loading} />
         </React.Fragment>
     );
 };
-
-
-
 
 export default Signup;

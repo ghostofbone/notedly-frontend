@@ -1,7 +1,5 @@
 import React from 'react';
-import {gql, useQuery} from "@apollo/client";
-import ReactMarkdown from "react-markdown"
-import Note from "../components/Note";
+import { useQuery} from "@apollo/client";
 import NoteFeed from "../components/NoteFeed";
 import Button from "../components/Button";
 import {GET_NOTES} from "../qql/query";

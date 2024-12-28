@@ -2,7 +2,6 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import {useQuery} from "@apollo/client";
 import {GET_ME} from "../qql/query";
-import Favorites from "../pages/favorites";
 import DeleteNote from "./DeleteNote";
 import FavoriteNote from "./FavoriteNote";
 

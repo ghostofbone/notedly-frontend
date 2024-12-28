@@ -1,7 +1,6 @@
 import React from 'react';
 import {useNavigate, useParams} from "react-router-dom";
-import {gql, useMutation, useQuery} from "@apollo/client";
-import Note from "../components/Note";
+import { useMutation, useQuery} from "@apollo/client";
 import {GET_ME, GET_NOTE} from "../qql/query";
 import NoteForm from "../components/NoteForm";
 import {EDIT_NOTE} from "../qql/mutation";

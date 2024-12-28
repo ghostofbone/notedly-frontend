@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route, Navigate, Outlet, useLocation } from "react-router-dom";
-import React, { useContext } from "react";
 import Home from "./home";
 import Mynotes from "./mynotes";
 import Favorites from "./favorites";

@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {useQuery} from "@apollo/client";
-import {GET_MY_FAVORITES, GET_MY_NOTES} from "../qql/query";
+import {GET_MY_FAVORITES} from "../qql/query";
 import NoteFeed from "../components/NoteFeed";
 
 const Favorites = (props) => {

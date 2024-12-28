@@ -5,7 +5,6 @@ import {format} from "date-fns";
 import {IS_LOGGED_IN} from "../qql/query";
 import {useQuery} from "@apollo/client";
 import NoteUser from "./NoteUser";
-import Favorites from "../pages/favorites";
 
 
 const StyledNote = styled.article`
