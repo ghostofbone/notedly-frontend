@@ -33,7 +33,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://ghostofbone.github.io/1.-notedly-frontend",
   "eslintConfig": {
     "extends": [
       "react-app",
