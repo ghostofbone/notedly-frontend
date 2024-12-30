@@ -27,8 +27,12 @@ export default createGlobalStyle`
     a:hover, a:active{
         
     }
-    code,
-    pre{
-        max-width: 100%;
+    code, pre {
+        white-space: pre-wrap; /* Wrap long lines */
+        word-wrap: break-word; /* Break long words */
+        overflow-x: auto; /* Add horizontal scroll for long content */
+        @media(max-width: 700px) {
+            font-size: 15px;
+        }
     }
 `

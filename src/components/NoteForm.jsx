@@ -7,7 +7,7 @@ const Wrapper = styled.div`
 `
 
 const Form = styled.form`
-    height: 100%;
+    height: calc(100% - 185px);
 `
 
 const TextArea = styled.textarea`

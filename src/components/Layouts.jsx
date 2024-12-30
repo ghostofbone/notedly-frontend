@@ -21,12 +21,15 @@ const Main = styled.main`
     width: 100%;
     padding: 1em;
     overflow-y: scroll;
+    padding-bottom: 100px;
+    margin-bottom: 40px;
     
     @media (min-width: 700px) {
         flex: 1;
         margin-left: 220px;
         height: calc(100% - 64px);
         width: calc(100% - 220px);
+        padding-bottom: 40px;
     }
 `;
 

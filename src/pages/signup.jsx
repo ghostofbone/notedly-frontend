@@ -28,7 +28,6 @@ const Signup = () => {
 
     return (
         <React.Fragment>
-            <h1>Sign Up</h1>
             <UserForm action={signUp} formType='signup' errors={error} loading={loading} />
         </React.Fragment>
     );

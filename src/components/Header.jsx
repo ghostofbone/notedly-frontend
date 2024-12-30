@@ -15,6 +15,8 @@ const HeaderBar = styled.header`
     background-color: #fff;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
     z-index: 1;
+    gap: 15px;
+    justify-content: space-between;
 `;
 
 const LogoText = styled.h1`
@@ -24,7 +26,7 @@ const LogoText = styled.h1`
 `;
 
 const UserState = styled.div`
-    margin-left: auto;
+    justify-content: end;
     a {
         padding: 0 1em;
         :hover {
@@ -32,6 +34,13 @@ const UserState = styled.div`
         }
     }
 `;
+
+const Logo = styled.div`
+    display: flex;
+    gap: 10px;
+    align-items: center;
+`
+
 
 const Header = (props) => {
     const navigate = useNavigate();
@@ -45,16 +54,18 @@ const Header = (props) => {
 
     return (
         <HeaderBar>
-            <span
-                style={{
-                    display: "block",
-                    width: "26px",
-                    height: "26px",
-                    borderRadius: "50%",
-                    backgroundColor: "#000",
-                }}
-            />
-            <LogoText>{props.title ? props.title : "Notedly"}</LogoText>
+            <Logo>
+                <span
+                    style={{
+                        display: "block",
+                        width: "26px",
+                        height: "26px",
+                        borderRadius: "50%",
+                        backgroundColor: "#000",
+                    }}
+                />
+                <LogoText>{props.title ? props.title : "Notedly"}</LogoText>
+            </Logo>
             <UserState>
                 {isLoggedIn ? (
                     <ButtonLink onClick={logout}>Logout</ButtonLink>
